@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Inicio</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+            <li>
+                <a href="#estudos" class="menu-link">Estudo</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="cabecalho">
+        <img src="img/projeto01.png" alt="Foto do Vinicius dos Passos da Silva" class="foto-perfil">
+        <h1>Vinicius dos Passos da Silva</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedor em Aprendizado</p>
+    </main>
+
+    <section id="sobre" class="sobre">
+        <h2 class="sobre-titulo">Sobre Mim</h2>
+        <div class="sobre-caixa">
+            <p class="sobre-paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cumque quo, maiores iure pariatur officia
+                veritatis aspernatur, iusto repellendus harum fugit, facilis vero et sequi? Iste amet provident nulla.
+                Neque?
+            </p>
+        </div>
+    </section>
+
+    <section id="projetos" class="projetos">
+        <h2 class="projetos-titulo">Meus Projetos</h2>
+        <div class="projetos-caixa">
+            <div class="projetos-card">
+                <img src="img/projeto01.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto 01</h3>
+                    <p class="paragrafo-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                        cupiditate minima quae, recusandae explicabo a porro optio dolorem magnam quos sequi deleniti
+                        incidunt velit eveniet laboriosam numquam sit blanditiis beatae.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto01.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto 02</h3>
+                    <p class="paragrafo-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                        cupiditate minima quae, recusandae explicabo a porro optio dolorem magnam quos sequi deleniti
+                        incidunt velit eveniet laboriosam numquam sit blanditiis beatae.</p>
+                </div>
+            </div>
+
+            <div class="projetos-card">
+                <img src="img/projeto01.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-texto-projeto">
+                    <h3 class="info-projetos">Projeto 03</h3>
+                    <p class="paragrafo-projetos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                        cupiditate minima quae, recusandae explicabo a porro optio dolorem magnam quos sequi deleniti
+                        incidunt velit eveniet laboriosam numquam sit blanditiis beatae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contatos" class="contatos">
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+        <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="grupo-form">
+                <input placeholder="Nome" class="campo-form" id="nome" required>
+            </div>
+            <div class="grupo-form">
+                <textarea class="campo-form" placeholder="Digite sua Mensagem" rows="6" id="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="botao-form">Enviar Whats</button>
+        </form>
+    </section>
+
+    <section id="estudos" class="estudos">
+        <h2 class="projetos-titulo">Meu Plano de Estudos</h2>
+        <div class="slider-container">
+            <div class="slider" id="slider">
+                <!-- 1º slider -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Fundamentos</h2>
+                    </div>
+                    <h3>Objetivo:</h3>
+                    <p>Aprender lógica, programação básica e ferramentas essenciais.</p>
+                    
+                    <h3>O que Estudar:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r1" type="checkbox" id="01">
+                        <label for="01">Lógica de Programação</label>
+                        <input value="2" name="r1" type="checkbox" id="02">
+                        <label for="02">Algoritmos e estruturas básicas (vetores, laços, condições)</label>
+                        <input value="3" name="r1" type="checkbox" id="03">
+                        <label for="03">Git e GitHub (controle de versão)</label>
+                        <input value="4" name="r1" type="checkbox" id="04">
+                        <label for="04">Início em Python ou Java</label>
+                    </div>
+                    
+                    <div class="resources">
+                        <h3>Plataformas Recomendadas:</h3>
+                        <span class="badge">Curso em Vídeo – Python</span>
+                        <span class="badge">DIO – Formação Lógica de Programação</span>
+                        <span class="badge">freeCodeCamp – Git & GitHub</span>
+                    </div>
+                    
+                    <h3>Projeto Prático:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r2" type="checkbox" id="05">
+                        <label for="05">Calculadora simples (console)</label>
+                        <input value="2" name="r2" type="checkbox" id="06">
+                        <label for="06">Controle de tarefas (To-Do List)</label>
+                        <input value="3" name="r2" type="checkbox" id="07">
+                        <label for="07">Mini portfólio no GitHub</label>
+                    </div>
+                </div>
+                
+                <!-- 2º slider -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Desenvolvimento e Engenharia</h2>
+                    </div>
+                    <h3>Objetivo:</h3>
+                    <p>Aprender linguagens modernas, orientação a objetos e banco de dados.</p>
+
+                    <h3>O que Estudar:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r3" type="checkbox" id="08">
+                        <label for="08">POO – Programação Orientada a Objetos (Java, Python, C#)</label>
+                        <input value="2" name="r3" type="checkbox" id="09">
+                        <label for="09">Estruturas de dados (listas, pilhas, filas, árvores)</label>
+                        <input value="3" name="r3" type="checkbox" id="10">
+                        <label for="10">Banco de dados relacional (MySQL ou PostgreSQL)</label>
+                        <input value="4" name="r3" type="checkbox" id="11">
+                        <label for="11">Modelagem de dados (MER e DER)</label>
+                    </div>
+                    
+                    <div class="resources">
+                        <h3>Plataformas Recomendadas:</h3>
+                        <span class="badge">Alura (pagamento mensal) – Formação Java, C# ou Python</span>
+                        <span class="badge">Curso em Vídeo – Java POO</span>
+                        <span class="badge">MySQL – Curso do Bóson Treinamentos</span>
+                    </div>
+
+                    <h3>Projeto Prático:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r4" type="checkbox" id="12">
+                        <label for="12">Sistema de cadastro de usuários (com banco de dados)</label>
+                        <input value="2" name="r4" type="checkbox" id="13">
+                        <label for="13">CRUD completo (Create, Read, Update, Delete)</label>
+                        <input value="3" name="r4" type="checkbox" id="14">
+                        <label for="14">Diagrama ER com MySQL Workbench</label>
+                    </div>
+                </div>
+                
+                <!-- 3º slider -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Arquitetura e Qualidade de Software</h2>
+                    </div>
+                    <h3>Objetivo:</h3>
+                    <p>Dominar como sistemas são estruturados, testados e mantidos em escala.</p>
+
+                    <h3>O que Estudar:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r5" type="checkbox" id="15">
+                        <label for="15">Design Patterns (Padrões de Projeto)</label>
+                        <input value="2" name="r5" type="checkbox" id="16">
+                        <label for="16">Arquitetura MVC e Clean Architecture</label>
+                        <input value="3" name="r5" type="checkbox" id="17">
+                        <label for="17">Testes automatizados (unitários e de integração)</label>
+                        <input value="4" name="r5" type="checkbox" id="18">
+                        <label for="18">Documentação e Engenharia de Requisitos</label>
+                        <input value="5" name="r5" type="checkbox" id="19">
+                        <label for="19">Ciclo de desenvolvimento Ágil (Scrum, Kanban)</label>
+                    </div>
+                    
+                    <div class="resources">
+                        <h3>Plataformas Recomendadas:</h3>
+                        <span class="badge">Refactoring Guru – Design Patterns</span>
+                        <span class="badge">CS50x (Harvard) – Gratuito e com certificado</span>
+                        <span class="badge">DIO – Bootcamps com projetos reais</span>
+                        <span class="badge">Google Project Management (Coursera)</span>
+                    </div>
+
+                    <h3>Projeto Prático:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r6" type="checkbox" id="20">
+                        <label for="20">Sistema de gestão de tarefas com autenticação</label>
+                        <input value="2" name="r6" type="checkbox" id="21">
+                        <label for="21">Testes com Pytest ou JUnit</label>
+                        <input value="3" name="r6" type="checkbox" id="22">
+                        <label for="22">Documentação em Markdown + diagramas UML</label>
+                    </div>
+                </div>
+                
+                <!-- 4º slider -->
+                <div class="phase">
+                    <div class="phase-header">
+                        <h2 class="phase-title">Aplicação Profissional</h2>
+                    </div>
+                    <h3>Objetivo:</h3>
+                    <p>Criar sistemas reais e se preparar para o mercado (portfólio e entrevistas).</p>
+
+                    <h3>O que Estudar:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r7" type="checkbox" id="23">
+                        <label for="23">DevOps básico (Docker, CI/CD, GitHub Actions)</label>
+                        <input value="2" name="r7" type="checkbox" id="24">
+                        <label for="24">Boas práticas de segurança</label>
+                        <input value="3" name="r7" type="checkbox" id="25">
+                        <label for="25">Cloud (AWS Free Tier, Heroku, Vercel, etc.)</label>
+                        <input value="4" name="r7" type="checkbox" id="26">
+                        <label for="26">Metodologias Ágeis com Trello, Jira ou Notion</label>
+                    </div>
+                    
+                    <div class="resources">
+                        <h3>Plataformas Recomendadas:</h3>
+                        <span class="badge">Docker – Curso do Willian Justen (YouTube)</span>
+                        <span class="badge">Deploy Python ou Java com Railway, Vercel ou Render</span>
+                        <span class="badge">GitHub Student Pack (grátis para estudantes)</span>
+                    </div>
+
+                    <h3>Projeto Prático:</h3>
+                    <div class="checklist-container">
+                        <input value="1" name="r8" type="checkbox" id="27">
+                        <label for="27">Sistema web completo com backend, frontend, banco e testes</label>
+                        <input value="2" name="r8" type="checkbox" id="28">
+                        <label for="28">Publicado na nuvem com documentação + repositório GitHub</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <div class="slider-dot active" onclick="goToSlide(0)"></div>
+            <div class="slider-dot" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+            <div class="slider-dot" onclick="goToSlide(3)"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script>
+        function enviarWhats(event) {
+            event.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const mensagem = document.getElementById('mensagem').value;
+            const telefone = '5547999975122';
+
+            const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
