@@ -108,7 +108,7 @@ body {
 }
 
 .links a:hover {
-    color: var(--primaria);
+    color: var(--secundaria);
 }
 
 h1 {
